@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+    bunny:
+        build:
+           context: .
+           dockerfile: Dockerfile
+        volumes:
+           - ./src/:/www/src/
+        ports: 
+           - "8080:8080"
+        
+        command: npm run dev
+        links:
+            - mongo
+    mongo:
+        container_name: mongo
+        image: mongo
+        volumes:
+        - ./data:/data/db
+        ports:
+        - "27017:27017"
