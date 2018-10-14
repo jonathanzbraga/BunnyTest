@@ -9,5 +9,5 @@ For this test I planned to:
    - Create HTML to present results
     
 I was able to configure the back-end and fron-end environment.
-The bakc-end API worked and made the proper communication with TORRE API receiving the content from the json file.
+The back-end API worked and made the proper communication with TORRE API receiving the content from the json file.
 The front-end I had issues and did not succeed.
